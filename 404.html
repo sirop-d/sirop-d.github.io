@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <!--
   sirop-d.github.io — custom 404（GitHub Pages）
-  @version v001  担当AI名: Cursor / ソル
+  @version v002  担当AI名: Cursor / ソル
+  改訂: lead 2行固定（狭い幅のみ折り返し）
   役割: そっけない既定404の代わりに、sirop.jp と同じ感覚で Kitt が迎える
   正本の404: https://sirop.jp/404.html
 -->
@@ -45,6 +46,12 @@
   .lead{
     margin:14px 0 0;max-width:32ch;font-family:"Shippori Mincho",serif;
     font-size:15px;line-height:1.9;color:var(--ink-soft);
+    display:flex;flex-direction:column;align-items:center;gap:0;
+  }
+  .lead-line{display:block;white-space:nowrap}
+  @media(max-width:360px){
+    .lead{max-width:18ch}
+    .lead-line{white-space:normal}
   }
   .note{
     margin:10px 0 0;max-width:36ch;font-size:12px;line-height:1.8;
@@ -65,7 +72,10 @@
     <img src="https://sirop.jp/assets/journal/kitt-drops-lemonade.png" width="1024" height="1024" alt="Kitt — レモネードを差し出すレモン少女">
   </figure>
   <h1>このページは見つからない</h1>
-  <p class="lead">迷子のところへ、レモネードを一杯。</p>
+  <p class="lead">
+    <span class="lead-line">迷子のところへ、</span>
+    <span class="lead-line">レモネードを一杯。</span>
+  </p>
   <p class="note">sirop-d.github.io は入口の控え。本館は sirop.jp です。</p>
   <div class="actions">
     <a href="https://sirop.jp/">sirop.jp へ</a>
