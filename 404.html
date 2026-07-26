@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+  sirop-d.github.io — custom 404（GitHub Pages）
+  @version v001  担当AI名: Cursor / ソル
+  役割: そっけない既定404の代わりに、sirop.jp と同じ感覚で Kitt が迎える
+  正本の404: https://sirop.jp/404.html
+-->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>404 — sirop</title>
+<meta name="description" content="このページは見つからない。レモネードを一杯、どう？">
+<link rel="canonical" href="https://sirop.jp/404.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Shippori+Mincho:wght@400;500&family=Zen+Kaku+Gothic+New:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#fff;
+    --ink:#1C3A5B;
+    --ink-strong:#15293F;
+    --ink-soft:#48607F;
+    --ink-faint:#8C93A0;
+    --line:rgba(28,58,91,.16);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;min-height:100%;background:var(--paper);color:var(--ink)}
+  body{
+    font-family:"Zen Kaku Gothic New",system-ui,sans-serif;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;padding:48px 24px;
+  }
+  .code{
+    margin:0 0 8px;font-family:"Cormorant Garamond",serif;
+    font-size:clamp(42px,8vw,72px);letter-spacing:.18em;color:var(--ink-faint);font-weight:400;
+  }
+  figure{margin:0 0 28px;width:min(280px,58vw)}
+  figure img{display:block;width:100%;height:auto}
+  h1{
+    margin:0;font-family:"Shippori Mincho",serif;font-weight:500;
+    font-size:clamp(22px,4.2vw,34px);line-height:1.45;color:var(--ink-strong);letter-spacing:.04em;
+  }
+  .lead{
+    margin:14px 0 0;max-width:32ch;font-family:"Shippori Mincho",serif;
+    font-size:15px;line-height:1.9;color:var(--ink-soft);
+  }
+  .note{
+    margin:10px 0 0;max-width:36ch;font-size:12px;line-height:1.8;
+    letter-spacing:.06em;color:var(--ink-faint);
+  }
+  .actions{margin-top:36px;display:flex;flex-wrap:wrap;gap:14px 28px;justify-content:center}
+  a{
+    font-size:12px;letter-spacing:.14em;color:var(--ink-strong);text-decoration:none;
+    border-bottom:1px solid var(--line);padding-bottom:4px;
+  }
+  a.quiet{color:var(--ink-soft)}
+  a:hover{border-color:var(--ink-strong)}
+</style>
+</head>
+<body>
+  <p class="code" aria-hidden="true">404</p>
+  <figure>
+    <img src="https://sirop.jp/assets/journal/kitt-drops-lemonade.png" width="1024" height="1024" alt="Kitt — レモネードを差し出すレモン少女">
+  </figure>
+  <h1>このページは見つからない</h1>
+  <p class="lead">迷子のところへ、レモネードを一杯。</p>
+  <p class="note">sirop-d.github.io は入口の控え。本館は sirop.jp です。</p>
+  <div class="actions">
+    <a href="https://sirop.jp/">sirop.jp へ</a>
+    <a class="quiet" href="https://sirop.jp/journal-kitt.html">Kitt の話を読む</a>
+  </div>
+</body>
+</html>
